@@ -1,7 +1,6 @@
 'use client'
 import Counter from '@/components/Counter'
 import FaqFullLayout from '@/components/FaqFullLayout'
-import NewsLetter from '@/components/NewsLetter'
 import { PricingData } from '@/data/data'
 import PriceChoose from '@/components/PriceChoose'
 import React, { useState } from 'react'
@@ -168,7 +167,6 @@ const Price = () => {
       <Counter />
       <PriceChoose />
       <FaqFullLayout />
-      <NewsLetter />
     </>
   )
 }

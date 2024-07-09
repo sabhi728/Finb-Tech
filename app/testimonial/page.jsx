@@ -2,7 +2,7 @@
 import PageHero from '@/components/heros/PageHero'
 import Pricing from '@/components/Pricing'
 import TestimonialSingle from '@/components/TestimonialSingle'
-
+import Clients from '@/components/Clients'
 const Testimonial = () => {
   return (
     <>
