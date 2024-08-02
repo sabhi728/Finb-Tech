@@ -22,8 +22,7 @@ const Services = ({ sectionDetails = true }) => {
                 trust Finb.
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not
-                Latin, though it looks like it
+                
               </p>
             </div>
           </div>

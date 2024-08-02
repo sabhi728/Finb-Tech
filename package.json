@@ -21,7 +21,7 @@
     "framer-motion": "^11.0.20",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.5",
-    "next": "^14.1.4",
+    "next": "^14.2.5",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
@@ -31,6 +31,7 @@
     "sass": "^1.63.6",
     "sharp": "^0.33.4",
     "swiper": "^11.0.6",
+    "swr": "^2.2.5",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {

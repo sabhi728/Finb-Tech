@@ -21,8 +21,7 @@ const AboutDetails = () => {
         </div>
 
         <div className="grid grid-cols-">
-          <div className="max-md:col-span-full md:col-span-6">
-            <div className="max-w-[1000px]">
+         <div className="max-w-[1000px]">
               <p className="section-tagline"></p>
               <h2 className='text-white'>Our Story</h2>
               <br/>
@@ -32,7 +31,8 @@ const AboutDetails = () => {
             <br/>
             <b>Mission:-</b> "Our mission is to empower businesses around the world with innovative, secure, and efficient financial services, enabling them to thrive in an increasingly digital economy."
             </p>
-            </div>
+            </div>  <div className="max-md:col-span-full md:col-span-6">
+           
           </div>
           <div className="max-w-[1000px] py-3 max-md:col-span-full md:col-span-6">
           <br/><h2 className='text-white'>Our Experties</h2>

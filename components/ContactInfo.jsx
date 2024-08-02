@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 const ContactInfo = () => {
   return (
-    <section className=" relative pb-150">
+    <section className=" relative pt-[50px] pb-150 bg-[#E3E4F8]">
       <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container ">
         <div className="relative z-10">
@@ -34,7 +34,7 @@ const ContactInfo = () => {
                   />
                 </svg>
                 <h3 className="mb-2.5">Our Address</h3>
-                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                <p>India</p>
               </div>
             </motion.div>
 
@@ -93,7 +93,7 @@ const ContactInfo = () => {
                   />
                 </svg>
                 <h3 className="mb-2.5">Call Us</h3>
-                <Link href="tel:+391(0)355684593">+391 (0)35 2568 4593</Link>
+                <Link href="tel:+391(0)355684593">+91 6375240605</Link>
               </div>
             </motion.div>
           </div>

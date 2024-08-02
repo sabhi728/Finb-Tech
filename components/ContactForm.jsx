@@ -7,7 +7,7 @@ const ContactForm = () => {
   const ref = useRef(null)
   const controlAnimation = useWhileInView(ref)
   return (
-    <section className="relative mb-150">
+    <section className="relative pb-[50px] bg-[#E3E4F8]">
       <div className="absolute left-1/2  -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <motion.div
         className="container relative"

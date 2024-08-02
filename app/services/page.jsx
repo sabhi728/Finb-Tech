@@ -10,7 +10,7 @@ export default function ServicePage() {
       <PageHero
         subtitle="OUR SERVICES"
         title="The world’s best companies <br> trust Finb "
-        paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
+        paragraph=""
       />
       <Services sectionDetails={false} />
     </>

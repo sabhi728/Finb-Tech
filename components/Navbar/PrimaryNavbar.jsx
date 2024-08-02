@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { createPortal } from 'react-dom'
-import SearchOption from '../SearchOption'
+
 
 const PrimaryNavbar = () => {
   const [showSearch, setShowSearch] = useState(false)
@@ -40,13 +39,13 @@ const PrimaryNavbar = () => {
         <nav className="container flex items-center">
           <div className="nav-logo xl:min-w-[266px]">
             <Link href="/">
-              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={100} height={50} />
+              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={140} height={50} />
               <Image
                 src={menuData.logoDark}
                 alt="logo dark version"
                 className="hidden dark:inline-block"
-                width={70}
-                height={29}
+                width={140}
+                height={50}
               />
             </Link>
           </div>
@@ -94,27 +93,6 @@ const PrimaryNavbar = () => {
           </ul>
 
           <ul className="ml-auto flex items-center [&>*:not(:last-child)]:me-2.5">
-            <li className="">
-              <button
-                onClick={() => setShowSearch(!showSearch)}
-                className="rounded-full bg-white p-2.5 dark:bg-dark-200 "
-                id="open-btn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M9.11278 0C14.1369 0 18.2245 4.08758 18.2245 9.11278C18.2245 11.2861 17.4592 13.5472 16.1845 14.8512L20 18.6667L18.6667 20L14.8512 16.1856C13.5667 17.4603 11.2861 18.2245 9.11278 18.2245C4.08758 18.2245 0 14.1369 0 9.11278C0 4.08758 4.08758 0 9.11278 0ZM9.11278 16.3395C13.0974 16.3395 16.3395 13.0974 16.3395 9.11278C16.3395 5.12818 13.0974 1.88608 9.11278 1.88608C5.12709 1.88608 1.88499 5.12818 1.88499 9.11278C1.88499 13.0974 5.12709 16.3395 9.11278 16.3395Z"
-                    fill=""
-                    className="fill-paragraph dark:fill-white"
-                  />
-                </svg>
-              </button>
-            </li>
-            <li className="max-lg:hidden bg:[#564B90]">
-              <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                Request Demo
-              </Link>
-            </li>
             <li className="max-lg:inline-block lg:hidden">
               <button
                 className="mobile-menu-button relative h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
@@ -195,17 +173,10 @@ const PrimaryNavbar = () => {
                   )}
                 </li>
               ))}
-
-              <li>
-                <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                  Request Demo
-                </Link>
-              </li>
             </ul>
           </div>
         </nav>
       </header>
-      {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
     </>
   )
 }

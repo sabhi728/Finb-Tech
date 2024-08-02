@@ -1,102 +1,47 @@
-import React from 'react';
+import PageHero from '@/components/heros/PageHero'
+import Introducation from '@/components/Resources/enach/Introducation'
+import Application from '@/components/Resources/enach/Application'
+import Faq from '@/components/Resources/enach/Faq'
+import { eNACHFeaturesData } from '@/data/data'
+import React from 'react'
+import Link from 'next/link'
 
-const ENACHSolutions = () => {
+const enach = () => {
   return (
-    <div className="relative">
-      {/* Hero Section */}
-      <section className="text-center pt-[200px] pb-16 bg-gray-100">
-        <h1 className="text-4xl font-bold mb-4">Streamline Your Payment Collections with eNACH Solutions</h1>
-        <p className="text-lg">Automate your recurring payments with eNACH, ensuring timely and efficient transaction processing across industries.</p>
-      </section>
-      
-      {/* Introduction */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <p className="text-lg mb-4">
-            eNACH (Electronic National Automated Clearing House) is a modern payment service designed to handle recurring transactions across various sectors. By allowing businesses to automate the debit of recurring fees directly from their customers' bank accounts, eNACH not only streamlines payment processes but also enhances the reliability and efficiency of financial operations, contributing to better customer service and sustained cash flows.
-          </p>
+    <>
+      <PageHero 
+        subtitle=""
+        title="Streamline Your Payment Collections with eNACH Solutions"
+        paragraph="Automate your recurring payments with eNACH, ensuring timely and efficient
+transaction processing across industries." />
+      <Introducation />
+      <Application
+        features={eNACHFeaturesData}
+        sectionTag={''}
+        sectionTitle={'Applications of eNACH Verification Across Industries'}
+        spacing={'max-md:py-25 py-150 bg-[#E3E4F8] dark:bg-dark-300 relative max-md:overflow-hidden'}
+      />
+     <Faq/>
+    <section className="relative pb-20 pt-150 max-md:overflow-hidden max-md:pb-25 max-md:pt-25" style={{ backgroundColor: '#462AD4' }}>
+      <div className="container relative ">
+        <div className="absolute -bottom-[442px] left-1/2 -z-10  flex -translate-x-1/2 max-md:hidden max-md:flex-col">
+          <div className="rounded-full bg-primary-200/20  blur-[145px] max-1xl:h-[335px]  max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
+          <div className="-ml-[170px] rounded-full  bg-primary-200/25 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
+          <div className="-ml-[170px] rounded-full  bg-primary-200/20 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
         </div>
-      </section>
-      
-      {/* Applications of eNACH Across Industries */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8">Applications of eNACH Across Industries</h2>
-          <ul className="space-y-8">
-            <li>
-              <h3 className="text-xl font-bold mb-4">Banking and Financial Services</h3>
-              <p>Use: Collection of EMIs, credit card bills, and insurance premiums.</p>
-              <p>Benefits: Ensures consistent cash flow and reduces the administrative costs associated with manual collections.</p>
-            </li>
-            <li>
-              <h3 className="text-xl font-bold mb-4">Utilities</h3>
-              <p>Use: Automated billing for electricity, water, and gas services.</p>
-              <p>Benefits: Reduces billing errors, ensures timely payments, and improves customer satisfaction by offering a hassle-free payment solution.</p>
-            </li>
-            <li>
-              <h3 className="text-xl font-bold mb-4">Telecommunications</h3>
-              <p>Use: Monthly billing for mobile and internet services.</p>
-              <p>Benefits: Prevents service interruptions, enhances customer retention by simplifying the payment process, and ensures steady revenue from subscriptions.</p>
-            </li>
-            <li>
-              <h3 className="text-xl font-bold mb-4">Education</h3>
-              <p>Use: Collection of tuition and other recurring school fees.</p>
-              <p>Benefits: Provides a reliable revenue stream for institutions and convenience for parents, reducing missed or late payments.</p>
-            </li>
-            <li>
-              <h3 className="text-xl font-bold mb-4">Real Estate</h3>
-              <p>Use: Management of rental or maintenance collections for residential and commercial properties.</p>
-              <p>Benefits: Automates transaction processing, reduces delinquencies, and streamlines property management tasks.</p>
-            </li>
-            <li>
-              <h3 className="text-xl font-bold mb-4">Healthcare</h3>
-              <p>Use: Subscription services for wellness programs, regular check-ups, or health club memberships.</p>
-              <p>Benefits: Facilitates easy and uninterrupted access to healthcare services, ensuring timely payment and reducing operational overhead.</p>
-            </li>
-          </ul>
+        <div className="absolute -bottom-[350px] left-1/2 -z-10 h-full w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')]  bg-contain bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
+        <div className=" mx-auto text-center">
+          <p className="mb-5 text-[32px] font-semibold max-lg:text-[32=px] text-white ">
+          "Optimize your payment processes and enhance customer satisfaction with our
+eNACH solutions. Contact us today to get started!</p>
+          <Link href="/contact" className="btn">
+          Implement eNACH Now
+          </Link>
         </div>
-      </section>
-      
-      {/* FAQs */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8">FAQs</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-bold mb-2">What is eNACH?</h3>
-              <p>eNACH is a service provided by the National Payments Corporation of India (NPCI) that allows businesses to collect recurring payments directly from a customer's bank account, after obtaining the necessary mandate.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-2">How does eNACH benefit businesses?</h3>
-              <p>eNACH provides businesses with a cost-effective, reliable, and efficient means to manage recurring collections, reducing the dependency on physical checks and manual processing.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-2">Is eNACH secure?</h3>
-              <p>Yes, eNACH follows stringent security protocols established by NPCI, ensuring that all transactions are secure and data privacy is maintained.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-2">What is required to set up eNACH for a business?</h3>
-              <p>Businesses need to partner with a bank or a payment service provider that supports eNACH services. They must also obtain a duly filled and signed mandate from their customers authorizing the automated debits.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-2">Can customers cancel their eNACH mandate?</h3>
-              <p>Yes, customers can cancel their eNACH mandate at any time, giving them control over their subscriptions and recurring payments.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-2">What happens if an eNACH transaction fails?</h3>
-              <p>In the event of a transaction failure, notifications are typically sent to both the business and the customer to take appropriate action, such as updating account details or ensuring sufficient funds are available.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Call to Action */}
-      <section className="py-16 text-center bg-gray-100">
-        <p className="text-lg mb-4">Optimize your payment processes and enhance customer satisfaction with our eNACH solutions. Contact us today to get started!</p>
-        <button className="px-8 py-3 text-lg font-bold text-white bg-blue-600 rounded-full hover:bg-blue-700">Implement eNACH Now</button>
-      </section>
-    </div>
-  );
-};
+      </div>
+    </section>
+    </>
+  )
+}
 
-export default ENACHSolutions;
+export default enach
