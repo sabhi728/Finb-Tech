@@ -1,6 +1,6 @@
 import PageHero from '@/components/heros/PageHero'
 import Introducation from '@/components/Resources/corporate-verification/Introducation'
-import Application from '@/components/Resources/corporate-verification/Application'
+import Application from '@/components/Resources/corporate-verification/Applicatioin'
 import Faq from '@/components/Resources/corporate-verification/Faq'
 import { CorporateFeaturesData } from '@/data/data'
 import React from 'react'

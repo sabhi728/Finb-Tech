@@ -1,4 +1,5 @@
-'use cilent'
+'use client'
+import React from 'react'
 import { fadeFromLeftAnimation } from '@/data/animation'
 import useWhileInView from '@/hooks/useWhileInView'
 import visionImage2Light from '@/public/images/kyc.png'
@@ -10,13 +11,13 @@ import Image from 'next/image'
 import { useRef } from 'react'
 
 const Kyc = () => {
-  const ref1 = useRef(null)
-  const ref2 = useRef(null)
   const ref3 = useRef(null)
+  const ref2 = useRef(null)
+  const ref1 = useRef(null)
 
-  const controlAnimation1 = useWhileInView(ref1)
-  const controlAnimation2 = useWhileInView(ref2)
   const controlAnimation3 = useWhileInView(ref3)
+  const controlAnimation2 = useWhileInView(ref2)
+  const controlAnimation1 = useWhileInView(ref1)
 
   return (
     <section className="relative overflow-hidden bg-[#E3E4F8] pb-[100px] pt-[100px] dark:mt- dark:bg-dark max-md:mt- max-md:pb-10 max-md:pt-[10px] dark:max-md:mt-">

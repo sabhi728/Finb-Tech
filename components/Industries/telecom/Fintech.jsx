@@ -1,3 +1,4 @@
+'use client'
 import { fadeFromLeftAnimation } from '@/data/animation'
 import useWhileInView from '@/hooks/useWhileInView'
 import visionImage2Light from '@/public/images/Api.png'

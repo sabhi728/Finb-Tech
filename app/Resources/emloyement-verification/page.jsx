@@ -1,6 +1,6 @@
 import PageHero from '@/components/heros/PageHero'
 import Introducation from '@/components/Resources/employement-verification/Introducation'
-import Application from '@/components/Resources/employement-verification/Application'
+import Application from '@/components/Resources/employement-verification/Applicatioin'
 import Faq from '@/components/Resources/employement-verification/Faq'
 import { EmployFeaturesData } from '@/data/data'
 import React from 'react'

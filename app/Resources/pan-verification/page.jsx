@@ -1,5 +1,5 @@
 import PageHero from '@/components/heros/PageHero'
-import Introducation from '@/components/Resources/pan-verification/Introducation'
+import Introducation from '@/components/Resources/pan-verification/Introdication'
 import Application from '@/components/Resources/pan-verification/Application'
 import Faq from '@/components/Resources/pan-verification/Faq'
 import { PanFeaturesData } from '@/data/data'

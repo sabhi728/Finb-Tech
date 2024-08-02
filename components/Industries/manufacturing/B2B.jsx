@@ -11,8 +11,12 @@ import { useRef } from 'react'
 
 const B2B = () => {
   const ref3 = useRef(null);
+  const ref2 = useRef(null);
+  const ref1 = useRef(null);
 
   const controlAnimation3 = useWhileInView(ref3);
+  const controlAnimation2 = useWhileInView(ref2);
+  const controlAnimation1 = useWhileInView(ref1);
 
   return (
     <section className="relative mt-50 overflow-hidden bg-[#0A003D] pb-[100px] pt-[100px] dark:mt- dark:bg-dark max-md:mt- max-md:pb-10 max-md:pt-[px] dark:max-md:mt-">

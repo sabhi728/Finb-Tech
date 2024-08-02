@@ -1074,7 +1074,7 @@ export const FooterData = {
     {
       id: 3,
       name: "Employement Verification",
-      link: "/Resources/employement-verification",
+      link: "/Resources/emloyement-verification",
       
     },
     {
