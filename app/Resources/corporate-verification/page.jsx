@@ -1,7 +1,7 @@
 import PageHero from '@/components/heros/PageHero'
 import Introducation from '@/components/Resources/corporate-verification/Introducation'
 import Application from '@/components/Resources/corporate-verification/Applicatioin'
-import Faq from '@/components/Resources/corporate-verification/Faq'
+import Faq from '@/components/Resources/corporate-verification/faq'
 import { CorporateFeaturesData } from '@/data/data'
 import React from 'react'
 import Link from 'next/link'
